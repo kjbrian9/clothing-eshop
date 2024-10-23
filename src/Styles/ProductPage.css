@@ -1,0 +1,150 @@
+.product-page-div {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.product-details-div {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 40%;
+}
+.product-image-div {
+  width: 40%;
+}
+
+.product-name {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.product-stock {
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.product-price {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.product-description-title {
+  font-size: 32px;
+  font-family: 400;
+  margin-top: 15px;
+}
+
+.free-shipping-text {
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 400;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.product-image {
+  width: 68%;
+  height: 38vw;
+  max-width: 75%;
+  min-height: 350px;
+  min-width: 250px;
+}
+
+.buy-button-div {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.product-page-product-sizes-div {
+  display: flex;
+  margin-top: 10px;
+  height: 30px;
+}
+
+@media (min-width: 769px) and (max-width: 1250px) {
+  .product-name {
+    font-size: 30px;
+  }
+  .product-stock {
+    font-size: 18px;
+  }
+  .product-price {
+    font-size: 22px;
+  }
+  .free-shipping-text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 769px) {
+  .product-details-right-left-side-container {
+    display: flex;
+  }
+  .product-image-div {
+    margin-top: 50px;
+    margin-right: 70px;
+  }
+  .product-name {
+    font-size: 20px;
+  }
+  .product-stock {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .product-details-right-side-container {
+    flex: 1;
+  }
+
+  .product-details-left-side-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .product-price {
+    font-size: 18px;
+  }
+  .free-shipping-text {
+    font-size: 10px;
+  }
+  .product-description-title {
+    font-size: 18px;
+  }
+  .buy-button-div {
+    margin: 0px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .product-page-div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-details-div {
+    padding: 20px;
+    order: 2;
+    margin-top: 10px;
+    width: 80%;
+  }
+  .product-image-div {
+    order: 1;
+    width: 80%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .product-image {
+    width: 100%;
+    height: 80vw;
+    max-width: 75%;
+    min-height: 350px;
+    min-width: 250px;
+  }
+}

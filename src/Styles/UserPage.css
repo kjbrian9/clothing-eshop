@@ -1,0 +1,134 @@
+.user-page-inner-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  width: 60%;
+  font-family: "Roboto";
+}
+
+.user-page-div {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-text {
+  font-size: 55px;
+  font-family: "Source serif 4";
+  font-weight: lighter;
+  margin-left: 150px;
+}
+
+.user-information-right,
+.user-information-left {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.user-information-left {
+}
+
+.user-information-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-information-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-logo-img {
+  width: 200px;
+}
+
+.acc-settings-logout {
+  display: flex;
+  flex-direction: row;
+}
+
+.barcode-img {
+  width: 240px;
+}
+
+.user-page-text {
+  font-weight: 100;
+}
+
+.left-side-user-information,
+.right-side-user-information {
+  margin-top: 5px;
+}
+
+.right-side-user-information {
+  font-weight: 400;
+}
+
+.user-id {
+  margin-top: 10px;
+}
+@media (min-width: 769px) and (max-width: 1250px) {
+  .welcome-text {
+    font-size: 45px;
+  }
+
+  .user-information-right,
+  .user-information-left {
+    font-size: 8px;
+    font-weight: normal;
+  }
+  .user-logo-img {
+    width: 130px;
+  }
+
+  .barcode-img {
+    width: 140px;
+  }
+
+  .user-id {
+    margin-top: 0px;
+    font-size: 13px;
+  }
+  .user-page-inner-div {
+    width: 85%;
+  }
+
+  .welcome-text {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 25px;
+    margin-left: 30px;
+  }
+
+  .user-logo-img {
+    width: 70px;
+  }
+  .left-side-user-information,
+  .right-side-user-information {
+    font-size: 10px;
+  }
+  .barcode-img {
+    width: 100px;
+  }
+  .user-settings {
+    font-size: 10px;
+  }
+  .user-name {
+    font-size: 10px;
+  }
+  .user-id {
+    font-size: 10px;
+  }
+  .user-page-inner-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 80%;
+  }
+}

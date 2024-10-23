@@ -1,0 +1,412 @@
+.about-us-page-button,
+.about-us-page-button-one {
+  font-size: 40px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-weight: 100;
+  height: 70px;
+  cursor: pointer;
+  position: relative;
+}
+.about-us-page-button-one {
+  font-size: 60px;
+}
+.about-us-page-button::before,
+.about-us-page-button::after,
+.about-us-page-button-one::before,
+.about-us-page-button-one::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 0px;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.about-us-page-button::after,
+.about-us-page-button-one::after {
+  left: 50%;
+  top: 0px;
+  border-radius: 25px;
+}
+.about-us-page-button::before,
+.about-us-page-button-one::before {
+  left: 50%;
+  bottom: 0px;
+  border-radius: 25px;
+}
+.about-us-page-button:hover::after,
+.about-us-page-button-one:hover::after {
+  width: 100%;
+  left: 0px;
+}
+.about-us-page-button:hover::before,
+.about-us-page-button-one:hover::before {
+  width: 100%;
+  left: 0px;
+}
+
+.about-us-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.about-us-page-background-div {
+  background-image: url("../../public/AboutUsImg1.jpeg");
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-page-background-div {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+.slow-fade-out {
+  opacity: 0;
+}
+
+.about-us-page-background-div-two,
+.about-us-page-background-div-three,
+.about-us-page-background-div-four {
+  background-image: url("../../public/AboutUsImage2.webp");
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-end;
+}
+.about-us-page-background-div-three {
+  background-image: url("../../public/AboutUsImage3.jpeg");
+  display: flex;
+  justify-content: start;
+}
+
+.about-us-page-background-div-four {
+  background-image: url("../../public/AboutUsImage4.jpeg");
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes lineAnimation {
+  100% {
+    width: 100%;
+    left: 0px;
+  }
+}
+
+.company-description-text,
+.company-description-text-four {
+  font-size: 28px;
+  font-family: "Source Serif 4";
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  margin: 0px;
+}
+.company-description-text-four {
+  font-size: 34px;
+}
+
+.about-us-page-img-one {
+  width: 100%;
+}
+
+.about-us-description-button-container-three {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.company-description-text-three {
+  font-family: "Source Serif 4";
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  font-size: 35px;
+  position: relative;
+  margin: 0px;
+  height: 400px;
+}
+
+.company-description-text-container-three {
+  width: 550px;
+  height: 400px;
+  position: relative;
+  align-self: center;
+  margin-left: 100px;
+}
+
+.company-description-text-three::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  height: 2px;
+  transition: width 0.5s ease;
+  top: -30px;
+  left: -20px;
+  animation: thirdSlideAnimationWidth 1.5s forwards;
+}
+
+.company-description-text-three::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  height: 2px;
+  right: -20px;
+  bottom: 0px;
+  transition: width 0.5s ease;
+  animation: thirdSlideAnimationWidth 1.5s forwards;
+}
+
+.company-description-text-container-three::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  height: 0px;
+  right: -20px;
+  bottom: 0px;
+  transition: height 0.5s ease;
+  animation: thirdSlideAnimationHeight 1.5s forwards;
+}
+.company-description-text-container-three::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  height: 0px;
+  left: -20px;
+  top: -30px;
+  transition: height 0.5s ease;
+  animation: thirdSlideAnimationHeight 1.5s forwards;
+}
+
+@keyframes thirdSlideAnimationHeight {
+  100% {
+    height: 45%;
+  }
+}
+
+@keyframes thirdSlideAnimationWidth {
+  100% {
+    width: 35%;
+  }
+}
+
+.company-description-slide-title,
+.company-description-slide-two-title,
+.company-description-slide-three-title,
+.company-description-slide-four-title {
+  font-family: "Source Serif 4";
+  font-size: 80px;
+  color: white;
+  margin: 0px;
+  align-self: center;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+.company-description-slide-four-title {
+  margin-top: 100px;
+  margin-left: 0px;
+}
+.slide-three-title-div {
+  align-self: center;
+  margin-left: 200px;
+}
+
+.about-us-slide-three-title {
+  width: 400px;
+  font-family: "Source Serif 4";
+  color: white;
+  font-size: 80px;
+  margin-left: 400px;
+  margin-top: 100px;
+}
+
+.about-us-title-description-container {
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+}
+
+.company-description-text-container,
+.company-description-text-container-four {
+  width: 500px;
+  position: relative;
+  margin-left: auto;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+.about-us-button-container {
+  align-self: center;
+  height: 200px;
+}
+
+.about-us-description-title-container-four {
+  display: flex;
+  flex-direction: row;
+}
+.company-description-text-four-container {
+  margin-top: 100px;
+  margin-right: 300px;
+}
+@media (min-width: 769px) and (max-width: 1250px) {
+  .company-description-text,
+  .company-description-text-four {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .company-description-text-container,
+  .company-description-text-container-four {
+    width: 400px;
+    margin-right: 20px;
+    margin-top: 100px;
+  }
+
+  .company-description-slide-title,
+  .company-description-slide-two-title,
+  .company-description-slide-three-title,
+  .company-description-slide-four-title {
+    font-size: 60px;
+    color: white;
+    margin: 0px;
+    align-self: center;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+
+  .company-description-text-three {
+    font-size: 25px;
+    position: relative;
+    height: 250px;
+  }
+
+  .company-description-text-container-three,
+  .company-description-text-container,
+  .company-description-text-container-three,
+  .company-description-text-four-container {
+    width: 550px;
+    height: 250px;
+    margin: 0px;
+    margin-left: 0px;
+    order: 2;
+  }
+  .about-us-page-background-div-four {
+    display: flex;
+    align-items: center;
+  }
+  .about-us-title-description-container,
+  .about-us-description-title-container-four {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us-slide-three-title,
+  .company-description-slide-two-title,
+  .company-description-slide-title,
+  .company-description-text-container-four {
+    width: 400px;
+    font-size: 60px;
+    margin: 0px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    order: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .company-description-text,
+  .company-description-text-four {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .company-description-text-container,
+  .company-description-text-container-four {
+    width: 400px;
+    margin-right: 20px;
+    margin-top: 100px;
+  }
+
+  .company-description-slide-title,
+  .company-description-slide-two-title,
+  .company-description-slide-three-title,
+  .company-description-slide-four-title {
+    font-size: 60px;
+    color: white;
+    margin: 0px;
+    align-self: center;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+
+  .company-description-text-three {
+    font-size: 20px;
+    position: relative;
+    height: 250px;
+  }
+
+  .company-description-text-container-three,
+  .company-description-text-container,
+  .company-description-text-container-three,
+  .company-description-text-four-container {
+    width: 300px;
+    height: 250px;
+    margin: 0px;
+    margin-left: 0px;
+    order: 2;
+  }
+  .about-us-page-background-div-four {
+    display: flex;
+    align-items: center;
+  }
+  .about-us-title-description-container,
+  .about-us-description-title-container-four {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us-slide-three-title,
+  .company-description-slide-two-title,
+  .company-description-slide-title,
+  .company-description-text-container-four {
+    width: 200px;
+    font-size: 40px;
+    margin: 0px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    order: 1;
+    text-align: center;
+  }
+
+  .company-description-slide-title {
+    width: 220px;
+    margin: 0px;
+  }
+}
