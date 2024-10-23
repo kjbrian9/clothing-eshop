@@ -10,7 +10,7 @@ function MobileHeader() {
   return (
     <div className="header">
       <div className="title-sentence-container">
-        <Link to={"/"}>
+        <Link to={"/clothing-eshop"}>
           <h1 className="webpage-title">Dawes</h1>
         </Link>
         <h1 className="header-sentence">Elevate your style effortlessly</h1>
