@@ -69,26 +69,38 @@ function App() {
           <BrowserRouter>
             <Header></Header>
             <Routes>
-              <Route path="/AboutUs" element={<AboutUsPage />} />
+              <Route path="clothing-eshop/AboutUs" element={<AboutUsPage />} />
               <Route
-                path="/product/:id"
+                path="clothing-eshop/product/:id"
                 element={<ProductPage products={Products} />}
               />
-              <Route path="/" element={<HeroPage />}></Route>
+              <Route path="clothing-eshop/" element={<HeroPage />}></Route>
               <Route
-                path="/SummerCollectionFrontPage"
+                path="clothing-eshop/SummerCollectionFrontPage"
                 element={<SummerCollectionFrontPage />}
               ></Route>
               <Route
-                path="/SummerCollectionPage"
+                path="clothing-eshop/SummerCollectionPage"
                 element={<SummerCollectionPage />}
               ></Route>
-              <Route path="/WomenPage" element={<WomenPage />}></Route>
-              <Route path="/UserPage" element={<UserPage />}></Route>
-              <Route path="/ContactPage" element={<ContactPage />}></Route>
-              <Route path="/CartPage" element={<CartPage />}></Route>
               <Route
-                path="/JewelleryPage"
+                path="clothing-eshop/WomenPage"
+                element={<WomenPage />}
+              ></Route>
+              <Route
+                path="clothing-eshop/UserPage"
+                element={<UserPage />}
+              ></Route>
+              <Route
+                path="clothing-eshop/ContactPage"
+                element={<ContactPage />}
+              ></Route>
+              <Route
+                path="clothing-eshop/CartPage"
+                element={<CartPage />}
+              ></Route>
+              <Route
+                path="clothing-eshop/JewelleryPage"
                 element={<JewelleryPage></JewelleryPage>}
               ></Route>
             </Routes>
