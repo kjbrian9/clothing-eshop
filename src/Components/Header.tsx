@@ -14,9 +14,6 @@ function Header() {
         <Link to={"/clothing-eshop"}>
           <h1 className="webpage-title">Dawes</h1>
         </Link>
-        <button onClick={() => console.log(process.env.PUBLIC_URL)}>
-          Test
-        </button>
         <h1 className="header-sentence">Elevate your style effortlessly</h1>
       </div>
       <nav className="header-tabs-container">
