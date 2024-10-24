@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/clothing-eshop/static/css/main.8a03ca0f.css",
+    "main.js": "/clothing-eshop/static/js/main.df012aae.js",
+    "static/js/453.0f66c1a4.chunk.js": "/clothing-eshop/static/js/453.0f66c1a4.chunk.js",
+    "static/media/AboutUsImage4.jpeg": "/clothing-eshop/static/media/AboutUsImage4.16953425cc407e6f02bf.jpeg",
+    "static/media/AboutUsImg1.jpeg": "/clothing-eshop/static/media/AboutUsImg1.32e19b54cb61825d1dfe.jpeg",
+    "static/media/AboutUsImage3.jpeg": "/clothing-eshop/static/media/AboutUsImage3.c227e43dc0c4a58a3ca0.jpeg",
+    "static/media/CollectionPageBgImage.jpeg": "/clothing-eshop/static/media/CollectionPageBgImage.d780722f2af613070025.jpeg",
+    "static/media/AboutUsImage2.webp": "/clothing-eshop/static/media/AboutUsImage2.468d644905cf47314e97.webp",
+    "index.html": "/clothing-eshop/index.html",
+    "static/media/trash.svg": "/clothing-eshop/static/media/trash.e3bf10332853025c5b59.svg",
+    "main.8a03ca0f.css.map": "/clothing-eshop/static/css/main.8a03ca0f.css.map",
+    "main.df012aae.js.map": "/clothing-eshop/static/js/main.df012aae.js.map",
+    "453.0f66c1a4.chunk.js.map": "/clothing-eshop/static/js/453.0f66c1a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a03ca0f.css",
+    "static/js/main.df012aae.js"
+  ]
+}
