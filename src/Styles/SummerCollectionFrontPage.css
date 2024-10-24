@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../../public/CollectionPageBgImage.jpeg");
+  background: url("../../public/images/CollectionPageBgImage.jpeg");
   background-position: center;
 }
 .summer-text {

@@ -57,7 +57,7 @@
 }
 
 .about-us-page-background-div {
-  background-image: url("../../public/AboutUsImg1.jpeg");
+  background-image: url("../../public/images/AboutUsImg1.jpeg");
   background-position: center;
   height: 100%;
   width: 100%;
@@ -78,7 +78,7 @@
 .about-us-page-background-div-two,
 .about-us-page-background-div-three,
 .about-us-page-background-div-four {
-  background-image: url("../../public/AboutUsImage2.webp");
+  background-image: url("../../public/images/AboutUsImage2.webp");
   background-position: center;
   height: 100%;
   width: 100%;
@@ -90,13 +90,13 @@
   justify-content: flex-end;
 }
 .about-us-page-background-div-three {
-  background-image: url("../../public/AboutUsImage3.jpeg");
+  background-image: url("../../public/images/AboutUsImage3.jpeg");
   display: flex;
   justify-content: start;
 }
 
 .about-us-page-background-div-four {
-  background-image: url("../../public/AboutUsImage4.jpeg");
+  background-image: url("../../public/images/AboutUsImage4.jpeg");
   display: flex;
   justify-content: start;
   align-items: end;

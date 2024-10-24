@@ -102,7 +102,7 @@
   align-items: center;
 }
 .remove-from-cart-button {
-  background-image: url(../../public/trash.svg);
+  background-image: url(../../public/images/trash.svg);
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
@@ -125,7 +125,7 @@
 
 @media (min-width: 769px) and (max-width: 1250px) {
   .remove-from-cart-button {
-    background-image: url(../../public/trash.svg);
+    background-image: url(../../public/images/trash.svg);
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
@@ -225,7 +225,7 @@
 
 @media (max-width: 768px) {
   .remove-from-cart-button {
-    background-image: url(../../public/trash.svg);
+    background-image: url(../../public/images/trash.svg);
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
