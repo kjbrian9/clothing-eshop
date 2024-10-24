@@ -19,7 +19,7 @@ function SummerCollectionPage() {
         </div>
         <div className="summer-collection-bg-image-container">
           <img
-            src="/SummerCollectionImagewebp.webp"
+            src={`${process.env.PUBLIC_URL}/images/SummerCollectionImagewebp.webp`}
             className="sc-background-image"
           ></img>
           <div className="sc-img-background-text-container">

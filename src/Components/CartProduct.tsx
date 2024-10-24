@@ -22,7 +22,10 @@ function CartProduct({
     <div className="cart-product-row-div">
       <div className="cart-product-image-container">
         <Link to={`/product/${productId}`}>
-          <img className="cart-product-image" src={productImage}></img>
+          <img
+            className="cart-product-image"
+            src={`${process.env.PUBLIC_URL}/${productImage}`}
+          ></img>
         </Link>
       </div>
       <div className="cart-product-name-quantity-size-container">

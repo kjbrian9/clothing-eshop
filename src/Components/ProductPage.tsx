@@ -82,7 +82,10 @@ function ProductPage({ products }: Props) {
           </div>
         </div>
         <div className="product-image-div">
-          <img className="product-image" src={product.image}></img>
+          <img
+            className="product-image"
+            src={`${process.env.PUBLIC_URL}/${product.image}`}
+          ></img>
         </div>
       </div>
     </>

@@ -35,7 +35,7 @@ function WomenPage() {
 
         <div className="summer-collection-bg-image-container">
           <img
-            src="/WomenPageBackgroundImg.webp  "
+            src={`${process.env.PUBLIC_URL}/images/WomenPageBackgroundImg.webp`}
             className="women-page-backrgound-img"
           ></img>
           <div className="women-img-background-text-container"></div>

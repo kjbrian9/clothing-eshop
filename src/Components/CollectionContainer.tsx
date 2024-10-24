@@ -9,7 +9,10 @@ interface Props {
 function CollectionContainer({ collectionTitle, image, pageLink }: Props) {
   return (
     <div className="collection-container">
-      <img className="collection-image" src={image}></img>
+      <img
+        className="collection-image"
+        src={`${process.env.PUBLIC_URL}/${image}`}
+      ></img>
       <CollectionTabButton
         title={collectionTitle}
         pageLink={pageLink}

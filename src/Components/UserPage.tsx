@@ -36,7 +36,10 @@ function UserPage() {
             </div>
           </div>
           <div className="user-information-right">
-            <img src="UserLogo.svg" className="user-logo-img"></img>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/UserLogo.svg`}
+              className="user-logo-img"
+            ></img>
             <h1 style={{ marginTop: "-10px" }} className="user-name">
               Brian Julius Kiss
             </h1>
@@ -56,7 +59,10 @@ function UserPage() {
                 Logout
               </h1>
             </div>
-            <img src="Barcode.png" className="barcode-img"></img>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/Barcode.png`}
+              className="barcode-img"
+            ></img>
             <h1 className="user-id">Id: 2048292482193310</h1>
           </div>
         </div>

@@ -14,6 +14,9 @@ function Header() {
         <Link to={"/clothing-eshop"}>
           <h1 className="webpage-title">Dawes</h1>
         </Link>
+        <button onClick={() => console.log(process.env.PUBLIC_URL)}>
+          Test
+        </button>
         <h1 className="header-sentence">Elevate your style effortlessly</h1>
       </div>
       <nav className="header-tabs-container">
@@ -49,14 +52,20 @@ function Header() {
           </li>
           <li>
             <Link to={"/UserPage  "}>
-              <img className="profile-logo" src="ProfileLogo.svg"></img>
+              <img
+                className="profile-logo"
+                src={`${process.env.PUBLIC_URL}/images/ProfileLogo.svg`}
+              ></img>
             </Link>
           </li>
           <li>
             <Link to={"/CartPage"}>
               <div className="cart-count-div">
                 <p>{cart.length}</p>
-                <img className="cart-logo" src="CartLogo.svg"></img>
+                <img
+                  className="cart-logo"
+                  src={`${process.env.PUBLIC_URL}/images/CartLogo.svg`}
+                ></img>
               </div>
             </Link>
           </li>

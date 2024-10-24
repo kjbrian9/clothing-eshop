@@ -14,7 +14,11 @@ function ProductTab({ id, image, productName, price, sizes }: Props) {
   return (
     <div key={id}>
       <Link to={`/product/${id}`} className="product-tab-container">
-        <img alt={productName} className="product-tab-image" src={image}></img>
+        <img
+          alt={productName}
+          className="product-tab-image"
+          src={`${process.env.PUBLIC_URL}/${image}`}
+        ></img>
         <h1 className="product-tab-name">{productName}</h1>
         <h1 className="product-tab-price">{price}€</h1>
 
