@@ -2,7 +2,7 @@ const Products = [
   {
     id: 1,
     name: "White tshirt",
-    image: "/productTabImage1.jpeg",
+    image: "/images/productTabImage1.jpeg",
     price: "100",
     description: "Description for Product 1",
     type: "Men",
@@ -12,7 +12,7 @@ const Products = [
   {
     id: 2,
     name: "Trench coat",
-    image: "/productTabImage2.jpeg",
+    image: "/images/productTabImage2.jpeg",
     price: "150",
     description: "Description for Product 2",
     type: "Men",
@@ -22,7 +22,7 @@ const Products = [
   {
     id: 3,
     name: "Yellow Hodiee",
-    image: "/productTabImage3.webp",
+    image: "/images/productTabImage3.webp",
     price: "150",
     description: "Description for Product 2",
     type: "Men",
@@ -32,7 +32,7 @@ const Products = [
   {
     id: 4,
     name: "Denim jacket",
-    image: "productTabImage4.webp",
+    image: "pimages/roductTabImage4.webp",
     price: "150",
     description: "Description for Product 2",
     type: "Men",
@@ -42,7 +42,7 @@ const Products = [
   {
     id: 5,
     name: "Red leather jacket",
-    image: "productTabImage5.webp",
+    image: "pimages/roductTabImage5.webp",
     price: "150",
     description: "Description for Product 2",
     type: "Men",
@@ -52,7 +52,7 @@ const Products = [
   {
     id: 6,
     name: "White sweater  ",
-    image: "productTabImage6.webp",
+    image: "pimages/roductTabImage6.webp",
     price: "150",
     description: "Description for Product 2",
     type: "Men",
@@ -62,7 +62,7 @@ const Products = [
   {
     id: 7,
     name: "Oversize tshirt",
-    image: "productTabImage7.webp",
+    image: "pimages/roductTabImage7.webp",
     price: "150",
     description: "Description for Product 2",
     type: "Men",
@@ -73,7 +73,7 @@ const Products = [
   {
     id: 8,
     name: "Denim jeans",
-    image: "productTabImage8.jpeg",
+    image: "pimages/roductTabImage8.jpeg",
     price: "150",
     description: "Description for Product 2",
     type: "Men",
@@ -83,7 +83,7 @@ const Products = [
   {
     id: 9,
     name: "Denim jacket",
-    image: "productTabImage9.webp",
+    image: "pimages/roductTabImage9.webp",
     price: "150",
     description: "Description for Product 2",
     type: "Men",
@@ -93,7 +93,7 @@ const Products = [
   {
     id: 10,
     name: "Yellow Hoodie",
-    image: "/productTabImage1.jpeg",
+    image: "/images/productTabImage1.jpeg",
     price: "150",
     description: "Description for Product 1",
     type: "Women",
@@ -103,7 +103,7 @@ const Products = [
   {
     id: 11,
     name: "Green Hodiee",
-    image: "/productTabImage2.jpeg",
+    image: "/images/productTabImage2.jpeg",
     price: "150",
     description: "Description for Product 2",
     type: "Women",
@@ -113,7 +113,7 @@ const Products = [
   {
     id: 12,
     name: "Red Hodiee",
-    image: "/productTabImage3.webp",
+    image: "/images/productTabImage3.webp",
     price: "150",
     description: "Description for Product 2",
     type: "Women",
@@ -123,7 +123,7 @@ const Products = [
   {
     id: 13,
     name: "Olive Hodiee",
-    image: "productTabImage4.webp",
+    image: "pimages/roductTabImage4.webp",
     price: "150",
     description: "Description for Product 2",
     type: "Women",
@@ -133,7 +133,7 @@ const Products = [
   {
     id: 14,
     name: "White Hodiee",
-    image: "productTabImage5.webp",
+    image: "pimages/roductTabImage5.webp",
     price: "150",
     description: "Description for Product 2",
     type: "Women",
@@ -143,7 +143,7 @@ const Products = [
   {
     id: 15,
     name: "White Hodiee",
-    image: "productTabImage6.webp",
+    image: "pimages/roductTabImage6.webp",
     price: "150",
     description: "Description for Product 2",
     type: "Women",
@@ -153,7 +153,7 @@ const Products = [
   {
     id: 16,
     name: "White Hodiee",
-    image: "productTabImage7.webp",
+    image: "pimages/roductTabImage7.webp",
     price: "150",
     description: "Description for Product 2",
     type: "Women",
@@ -164,7 +164,7 @@ const Products = [
   {
     id: 17,
     name: "White Hodiee",
-    image: "productTabImage8.jpeg",
+    image: "pimages/roductTabImage8.jpeg",
     price: "150",
     description: "Description for Product 2",
     type: "Women",
@@ -174,7 +174,7 @@ const Products = [
   {
     id: 18,
     name: "White Hodiee",
-    image: "productTabImage9.webp",
+    image: "pimages/roductTabImage9.webp",
     price: "150",
     description: "Description for Product 2",
     type: "Women",
@@ -184,7 +184,7 @@ const Products = [
   {
     id: 19,
     name: "Gold & Silver necklace",
-    image: "jewellery-picture.webp",
+    image: "jimages/ewellery-picture.webp",
     price: "100",
     description: "Description for Product 1",
     type: "Jewellery",
@@ -193,7 +193,7 @@ const Products = [
   {
     id: 20,
     name: "Silver necklace",
-    image: "jewellery-picture0.jpeg",
+    image: "jimages/ewellery-picture0.jpeg",
     price: "150",
     description: "Description for Product 2",
     type: "Jewellery",
@@ -202,7 +202,7 @@ const Products = [
   {
     id: 21,
     name: "Silver jewellery set",
-    image: "jewellery-picture1.webp",
+    image: "jimages/ewellery-picture1.webp",
     price: "80",
     description: "Description for Product 2",
     type: "Jewellery",
@@ -211,7 +211,7 @@ const Products = [
   {
     id: 22,
     name: "Silver bracelet",
-    image: "jewellery-picture2.webp",
+    image: "jimages/ewellery-picture2.webp",
     price: "300",
     description: "Description for Product 2",
     type: "Jewellery",
@@ -220,7 +220,7 @@ const Products = [
   {
     id: 23,
     name: "Brace jewellery  set",
-    image: "jewellery-picture3.webp",
+    image: "jimages/ewellery-picture3.webp",
     price: "58",
     description: "Description for Product 2",
     type: "Jewellery",
@@ -229,7 +229,7 @@ const Products = [
   {
     id: 24,
     name: "Silver Verj jewellery winter set",
-    image: "JewelleryImages/jewellery-picture4.webp",
+    image: "Jimages/ewelleryImages/jewellery-picture4.webp",
     price: "150",
     description: "Description for Product 2",
     type: "Jewellery",
@@ -238,7 +238,7 @@ const Products = [
   {
     id: 25,
     name: "Ave Sunglasses",
-    image: "jewellery-picture5.webp",
+    image: "jimages/ewellery-picture5.webp",
     price: "299",
     description: "Description for Product 2",
     type: "Jewellery",
@@ -247,7 +247,7 @@ const Products = [
   {
     id: 26,
     name: "White gold necklace",
-    image: "jewellery-picture6.webp",
+    image: "jimages/ewellery-picture6.webp",
     price: "1250",
     description: "Description for Product 2",
     type: "Jewellery",
@@ -257,7 +257,7 @@ const Products = [
   {
     id: 27,
     name: "Golden face jewellery",
-    image: "jewellery-picture8.jpeg",
+    image: "jimages/ewellery-picture8.jpeg",
     price: "580",
     description: "Description for Product 2",
     type: "Jewellery",
