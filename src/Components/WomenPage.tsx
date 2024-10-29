@@ -10,15 +10,25 @@ import FilterButton from "./FilterButton";
 import ResetFiltersButton from "./ResetFiltersButton";
 import { useEffect, useState } from "react";
 import MobileFilter from "./MobileFilter";
+import { useFilterContext } from "./FilterContext";
+import { FilterProps } from "../App";
 
 function WomenPage() {
+  const { filters, setFilters } = useFilterContext();
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const [screenHeight, setScreenHeight] = useState(window.innerHeight);
 
   useEffect(() => {
     window.addEventListener("resize", resizeHandler);
-  });
+    let newSizeFilter: FilterProps = {
+      colorFilter: "",
+      sizeFilter: "",
+      priceRange: 0,
+      isFilterOn: "false",
+    };
+    setFilters(newSizeFilter);
+  }, [setFilters]);
 
   const resizeHandler = () => {
     setScreenWidth(window.innerWidth);

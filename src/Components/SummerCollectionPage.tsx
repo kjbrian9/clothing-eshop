@@ -7,10 +7,20 @@ import FilterButton from "./FilterButton";
 import { useFilterContext } from "./FilterContext";
 import PriceSlider from "./PriceSlider";
 import ResetFiltersButton from "./ResetFiltersButton";
+import { useEffect } from "react";
+import { FilterProps } from "../App";
 
 function SummerCollectionPage() {
   const { filters, setFilters } = useFilterContext();
-
+  useEffect(() => {
+    let newSizeFilter: FilterProps = {
+      colorFilter: "",
+      sizeFilter: "",
+      priceRange: 0,
+      isFilterOn: "false",
+    };
+    setFilters(newSizeFilter);
+  }, [setFilters]);
   return (
     <div>
       <div className="summer-collection-page-content">

@@ -5,6 +5,7 @@ import { FilterProps } from "../App";
 
 function SizeFilter() {
   const { filters, setFilters } = useFilterContext();
+  const [isFilterPressed, setFilterPressed] = useState(false);
   let Colors = ["Red", "Black", "White", "Grey", "Blue", "Yellow"];
   const [selectedColor, setSelectedColor] = useState(" ");
 
@@ -13,25 +14,41 @@ function SizeFilter() {
       {Colors.map((e) => (
         <button
           onClick={() => {
-            let newSizeFilter: FilterProps = {
-              sizeFilter: filters.sizeFilter,
-              colorFilter: e,
-              priceRange: filters.priceRange,
-              isFilterOn: filters.isFilterOn,
-            };
+            if (isFilterPressed === false) {
+              let newSizeFilter: FilterProps = {
+                sizeFilter: filters.sizeFilter,
+                colorFilter: e,
+                priceRange: filters.priceRange,
+                isFilterOn: filters.isFilterOn,
+              };
 
-            setFilters(newSizeFilter);
-            setSelectedColor(e);
-            console.log("\nsizefilter: " + newSizeFilter.colorFilter);
-            console.log("e:" + e.toString());
+              setFilters(newSizeFilter);
+              setSelectedColor(e);
+              console.log("\nsizefilter: " + newSizeFilter.colorFilter);
+              console.log("e:" + e.toString());
+              setFilterPressed(true);
+              console.log(isFilterPressed);
+            } else {
+              setFilterPressed(false);
+              console.log(isFilterPressed);
+            }
           }}
           className={"color-filter-button"}
           style={{
-            backgroundColor: selectedColor === e ? "rgb(30, 29, 29)" : "",
-            opacity: selectedColor === e ? "0.8" : "",
-            border: selectedColor === e ? "solid 3px rgb(30, 29, 29)" : "",
-            color: selectedColor === e ? " white" : "",
-            borderRadius: selectedColor === e ? "40px" : "",
+            backgroundColor:
+              selectedColor === e && isFilterPressed === true
+                ? "rgb(30, 29, 29)"
+                : "",
+            opacity:
+              selectedColor === e && isFilterPressed === true ? "0.8" : "",
+            border:
+              selectedColor === e && isFilterPressed === true
+                ? "solid 3px rgb(30, 29, 29)"
+                : "",
+            color:
+              selectedColor === e && isFilterPressed === true ? " white" : "",
+            borderRadius:
+              selectedColor === e && isFilterPressed === true ? "40px" : "",
           }}
         >
           {e}

@@ -57,14 +57,25 @@
 }
 
 .buy-button-div {
-  margin-left: 100px;
-  margin-top: 100px;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .product-page-product-sizes-div {
   display: flex;
   margin-top: 10px;
   height: 30px;
+}
+
+.added-to-cart-text,
+.select-size-text {
+  color: grey;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 @media (min-width: 769px) and (max-width: 1250px) {

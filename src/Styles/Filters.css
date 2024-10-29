@@ -37,6 +37,7 @@
 
 .filter-selected-price {
   font-weight: 400;
+  width: 40px;
   font-size: 12px;
   font-family: "Roboto";
 }

@@ -32,6 +32,7 @@ export interface FilterProps {
   sizeFilter: string;
   priceRange: number;
   isFilterOn: string;
+  materialFilter?: string;
 }
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
     sizeFilter: "",
     isFilterOn: "false",
     priceRange: 0,
+    materialFilter: "" as string,
   });
   const filterValue = { filters, setFilters };
 
@@ -74,7 +76,7 @@ function App() {
                 path="/product/:id"
                 element={<ProductPage products={Products} />}
               />
-              <Route path="/" element={<HeroPage />}></Route>
+              <Route path="/clothing-eshop" element={<HeroPage />}></Route>
               <Route
                 path="/SummerCollectionFrontPage"
                 element={<SummerCollectionFrontPage />}

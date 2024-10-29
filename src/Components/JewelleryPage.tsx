@@ -8,15 +8,24 @@ import ProductList from "./ProductList";
 import ResetFiltersButton from "./ResetFiltersButton";
 import SizeFilter from "./SizeFilter";
 import MobileFilter from "./MobileFilter";
+import { FilterProps } from "../App";
+import { useFilterContext } from "./FilterContext";
 
 function JewelleryPage() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const [screenHeight, setScreenHeight] = useState(window.innerHeight);
-
+  const { filters, setFilters } = useFilterContext();
   useEffect(() => {
     window.addEventListener("resize", resizeHandler);
-  });
+    let newSizeFilter: FilterProps = {
+      colorFilter: "",
+      sizeFilter: "",
+      priceRange: 0,
+      isFilterOn: "false",
+    };
+    setFilters(newSizeFilter);
+  }, [setFilters]);
 
   const resizeHandler = () => {
     setScreenWidth(window.innerWidth);

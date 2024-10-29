@@ -25,6 +25,7 @@ function ProductPage({ products }: Props) {
   const [selectedSize, setSelectedSize] = useState(" ");
   const { id } = useParams<{ id: string }>();
   const product = products.find((p) => p.id === parseInt(id || "", 10));
+  const [isVisible, setVisible] = useState(false);
 
   if (!product) {
     return <h2>Product not found</h2>;
@@ -72,13 +73,33 @@ function ProductPage({ products }: Props) {
             </div>
           </div>
           <div className="buy-button-div">
-            <BuyButton
-              productId={product?.id}
-              productName={product?.name}
-              productImage={product?.image}
-              productPrice={product?.price}
-              productSize={selectedSize}
-            ></BuyButton>
+            <div>
+              {isVisible ? (
+                selectedSize === " " ? (
+                  <h1 className="select-size-text">Please select a size</h1>
+                ) : (
+                  <h1 className="added-to-cart-text">Added to cart</h1>
+                )
+              ) : (
+                <></>
+              )}
+            </div>
+            <div
+              onClick={() => {
+                setVisible(true);
+                const timer = setTimeout(() => {
+                  setVisible(false);
+                }, 3000);
+              }}
+            >
+              <BuyButton
+                productId={product?.id}
+                productName={product?.name}
+                productImage={product?.image}
+                productPrice={product?.price}
+                productSize={selectedSize}
+              ></BuyButton>
+            </div>
           </div>
         </div>
         <div className="product-image-div">

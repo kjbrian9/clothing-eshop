@@ -9,7 +9,7 @@ function HeroPage() {
           <CollectionContainer
             collectionTitle="Men"
             pageLink="/SummerCollectionFrontPage"
-            image="CollectionTabPicture1.jpeg"
+            image={`CollectionTabPicture1.jpeg`}
           ></CollectionContainer>
           <CollectionContainer
             collectionTitle="Women"
