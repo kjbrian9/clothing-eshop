@@ -11,10 +11,11 @@ function FilterButton() {
       sizeFilter: filters.sizeFilter,
       priceRange: filters.priceRange,
       isFilterOn: "true",
+      materialFilter: filters.materialFilter,
     };
 
     setFilters(newSizeFilter);
-
+    console.log(filters.materialFilter);
     console.log(filters.isFilterOn);
 
     return;

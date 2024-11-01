@@ -11,6 +11,7 @@ function ResetFiltersButton() {
       sizeFilter: "",
       priceRange: 0,
       isFilterOn: "false",
+      materialFilter: filters.materialFilter,
     };
     setFilters(newSizeFilter);
     console.log(filters.isFilterOn);

@@ -34,12 +34,6 @@
   margin: 0px;
 }
 
-.product-description-title {
-  font-size: 32px;
-  font-family: 400;
-  margin-top: 15px;
-}
-
 .free-shipping-text {
   font-size: 16px;
   font-family: "Inter";
@@ -54,6 +48,7 @@
   max-width: 75%;
   min-height: 350px;
   min-width: 250px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 }
 
 .buy-button-div {
@@ -76,6 +71,23 @@
   color: grey;
   font-size: 18px;
   font-weight: 400;
+}
+.product-description-title {
+  font-size: 20px;
+  font-family: 400;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+.product-description {
+  font-size: 12px;
+  width: 400px;
+  font-weight: 400;
+  font-family: "Roboto";
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(174, 174, 174, 0.4);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 15px;
 }
 
 @media (min-width: 769px) and (max-width: 1250px) {

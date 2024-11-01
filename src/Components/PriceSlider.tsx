@@ -11,6 +11,7 @@ function PriceSlider() {
     sizeFilter: filters.sizeFilter,
     priceRange: price,
     isFilterOn: filters.isFilterOn,
+    materialFilter: filters.materialFilter,
   };
 
   var slider = document.getElementById("Slider");

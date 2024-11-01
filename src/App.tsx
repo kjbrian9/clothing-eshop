@@ -32,7 +32,7 @@ export interface FilterProps {
   sizeFilter: string;
   priceRange: number;
   isFilterOn: string;
-  materialFilter?: string;
+  materialFilter: string;
 }
 
 function App() {
@@ -60,7 +60,7 @@ function App() {
     sizeFilter: "",
     isFilterOn: "false",
     priceRange: 0,
-    materialFilter: "" as string,
+    materialFilter: "",
   });
   const filterValue = { filters, setFilters };
 

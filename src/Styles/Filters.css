@@ -1,5 +1,6 @@
 .size-filter-container,
-.color-filter-container {
+.color-filter-container,
+.material-filter-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -87,7 +88,8 @@
 }
 
 .size-button,
-.color-filter-button {
+.color-filter-button,
+.material-filter-button {
   border: none;
   background: none;
   font-family: "Roboto";
@@ -97,8 +99,12 @@
   width: 40px;
   cursor: pointer;
 }
+.material-filter-button {
+  width: 70px;
+}
 
-.color-filter-button {
+.color-filter-button,
+.material-filter-button {
   font-size: 12px;
 }
 
@@ -167,7 +173,8 @@
     height: 40px;
   }
   .size-filter-container,
-  .color-filter-container {
+  .color-filter-container,
+  .material-filter-container {
     padding-right: 5px;
   }
   .size-button {

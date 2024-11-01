@@ -20,6 +20,7 @@ function SizeFilter() {
                 sizeFilter: e,
                 priceRange: filters.priceRange,
                 isFilterOn: filters.isFilterOn,
+                materialFilter: filters.materialFilter,
               };
 
               setFilterPressed(true);

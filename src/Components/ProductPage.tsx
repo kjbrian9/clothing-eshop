@@ -42,7 +42,12 @@ function ProductPage({ products }: Props) {
             </div>
             <div className="product-details-left-side-container">
               <h1 className="product-price">{product?.price}€</h1>
-              <h1 className="product-description-title">Description</h1>
+
+              <h1 className="product-description">
+                {" "}
+                <h1 className="product-description-title">Details</h1>
+                {product?.description}
+              </h1>
 
               <h1 className="free-shipping-text">
                 Free shipping over orders that cost 45€

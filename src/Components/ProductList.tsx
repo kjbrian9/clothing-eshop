@@ -12,6 +12,7 @@ interface Product {
   type: string;
   sizes: string[];
   color?: string;
+  material?: string;
 }
 
 interface Props {
@@ -26,9 +27,10 @@ function ProductList({ products, productType }: Props) {
     if (filters.isFilterOn === "false") return product.type == productType;
     else
       return (
+        (product.material ?? "") == filters.materialFilter &&
         product.type == productType &&
         product.sizes.includes(filters.sizeFilter ?? " ") &&
-        product.color == filters.colorFilter &&
+        (product.color ?? "") == filters.colorFilter &&
         Number(product.price) < filters.priceRange
       );
   };

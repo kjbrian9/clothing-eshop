@@ -4,7 +4,8 @@ const Products = [
     name: "White tshirt",
     image: "/images/productTabImage1.jpeg",
     price: "100",
-    description: "Description for Product 1",
+    description:
+      "This timeless classic is made from 100% organic cotton, offering a soft and breathable fit. Perfect for layering or wearing solo, it features a relaxed fit and a crew neckline, making it a staple for any wardrobe.",
     type: "Men",
     sizes: ["XS", "S", "M"],
     color: "White",
@@ -189,6 +190,7 @@ const Products = [
     description: "Description for Product 1",
     type: "Jewellery",
     sizes: ["XS", "S", "M"],
+    material: "Silver",
   },
   {
     id: 20,
@@ -198,6 +200,7 @@ const Products = [
     description: "Description for Product 2",
     type: "Jewellery",
     sizes: ["XS", "S", "M"],
+    material: "Silver",
   },
   {
     id: 21,
@@ -207,6 +210,7 @@ const Products = [
     description: "Description for Product 2",
     type: "Jewellery",
     sizes: ["XS", "S", "M"],
+    material: "Silver",
   },
   {
     id: 22,
@@ -216,6 +220,7 @@ const Products = [
     description: "Description for Product 2",
     type: "Jewellery",
     sizes: ["XS", "S", "M"],
+    material: "Silver",
   },
   {
     id: 23,
@@ -225,6 +230,7 @@ const Products = [
     description: "Description for Product 2",
     type: "Jewellery",
     sizes: ["XS", "M"],
+    material: "White gold",
   },
   {
     id: 24,
@@ -252,6 +258,8 @@ const Products = [
     description: "Description for Product 2",
     type: "Jewellery",
     sizes: ["XS", "S", "M"],
+
+    material: "White gold",
   },
 
   {
@@ -262,6 +270,7 @@ const Products = [
     description: "Description for Product 2",
     type: "Jewellery",
     sizes: ["XS", "S"],
+    material: "Gold",
   },
 
   // Add more products here

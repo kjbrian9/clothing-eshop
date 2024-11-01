@@ -10,6 +10,7 @@ import SizeFilter from "./SizeFilter";
 import MobileFilter from "./MobileFilter";
 import { FilterProps } from "../App";
 import { useFilterContext } from "./FilterContext";
+import MaterialFilter from "./MaterialFilter";
 
 function JewelleryPage() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -23,6 +24,7 @@ function JewelleryPage() {
       sizeFilter: "",
       priceRange: 0,
       isFilterOn: "false",
+      materialFilter: filters.materialFilter,
     };
     setFilters(newSizeFilter);
   }, [setFilters]);
@@ -41,7 +43,7 @@ function JewelleryPage() {
         </div>
         {screenWidth >= 769 ? (
           <div className="filters-container">
-            <ColorFilter></ColorFilter>
+            <MaterialFilter></MaterialFilter>
             <SizeFilter></SizeFilter>
             <PriceSlider></PriceSlider>
             <div className="filter-reset-button">

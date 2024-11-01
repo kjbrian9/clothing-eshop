@@ -7,6 +7,7 @@ const filterContext = createContext({
     sizeFilter: "",
     priceRange: 0,
     isFilterOn: "",
+    materialFilter: "",
   },
 
   setFilters: (value: FilterProps) => {},

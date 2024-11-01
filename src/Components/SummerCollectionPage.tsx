@@ -18,6 +18,7 @@ function SummerCollectionPage() {
       sizeFilter: "",
       priceRange: 0,
       isFilterOn: "false",
+      materialFilter: "",
     };
     setFilters(newSizeFilter);
   }, [setFilters]);
