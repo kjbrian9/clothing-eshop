@@ -14,8 +14,6 @@
 .product-tab-image {
   width: 80%;
   height: 22vw;
-  max-width: 75%;
-  max-height: 325px;
   object-fit: cover;
   transition: transform 1s ease-in-out, scale 1s ease-out,
     border-radius 1s ease-in-out;
