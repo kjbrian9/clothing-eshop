@@ -98,6 +98,7 @@
   height: 40px;
   width: 40px;
   cursor: pointer;
+  color: black !important;
 }
 .material-filter-button {
   width: 70px;
@@ -152,8 +153,8 @@
     height: 20px;
   }
   .price-slider-container {
-    width: 250px;
-    margin-right: 20px;
+    width: 200px;
+    margin-right: 0px;
   }
 
   .mobile-filter-container {
@@ -186,7 +187,7 @@
   }
   .price-slider {
     height: 3px;
-    width: 150px;
+    width: 100px;
   }
   .price-slider::-webkit-slider-thumb {
     width: 10px;
