@@ -60,16 +60,11 @@ function ProductPage({ products }: Props) {
                       console.log("selected size" + selectedSize);
                       console.log("e:" + e.toString());
                     }}
-                    className={"size-button"}
-                    style={{
-                      backgroundColor:
-                        selectedSize === e ? "rgb(30, 29, 29)" : "",
-                      opacity: selectedSize === e ? "0.8" : "",
-                      border:
-                        selectedSize === e ? "solid 3px rgb(30, 29, 29)" : "",
-                      color: selectedSize === e ? " white" : "",
-                      borderRadius: selectedSize === e ? "40px" : "",
-                    }}
+                    className={
+                      selectedSize === e
+                        ? "size-filter-button-selected"
+                        : "size-button"
+                    }
                   >
                     {e}
                   </button>

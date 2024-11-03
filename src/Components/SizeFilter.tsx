@@ -32,23 +32,11 @@ function SizeFilter() {
               setFilterPressed(false);
             }
           }}
-          className={"size-button"}
-          style={{
-            backgroundColor:
-              selectedSize === e && isFilterPressed === true
-                ? "rgb(30, 29, 29)"
-                : "",
-            opacity:
-              selectedSize === e && isFilterPressed === true ? "0.8" : "",
-            border:
-              selectedSize === e && isFilterPressed === true
-                ? "solid 3px rgb(30, 29, 29)"
-                : "",
-            color:
-              selectedSize === e && isFilterPressed === true ? " white" : "",
-            borderRadius:
-              selectedSize === e && isFilterPressed === true ? "40px" : "",
-          }}
+          className={
+            selectedSize === e && isFilterPressed === true
+              ? "size-filter-button-selected"
+              : "size-button"
+          }
         >
           {e}
         </button>

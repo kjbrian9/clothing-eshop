@@ -7,15 +7,12 @@ import "../Styles/Filters.css";
 function MobileFilter() {
   return (
     <div className="mobile-filter-container">
-      <div className="mobile-filter-upper-container">
-        <ColorFilter></ColorFilter>
-        <SizeFilter></SizeFilter>
-      </div>
-      <div className="mobile-filter-lower-container">
-        <PriceSlider></PriceSlider>
-        <FilterButton></FilterButton>
-        <ResetFiltersButton></ResetFiltersButton>
-      </div>
+      <ColorFilter></ColorFilter>
+      <SizeFilter></SizeFilter>
+
+      <PriceSlider></PriceSlider>
+      <FilterButton></FilterButton>
+      <ResetFiltersButton></ResetFiltersButton>
     </div>
   );
 }

@@ -35,22 +35,18 @@ function ProductList({ products, productType }: Props) {
       );
   };
   return (
-    <div>
-      <div className="product-grid-container ">
-        {products
-          .filter((x) => filterFunction(x))
-          .map((product) => (
-            <div>
-              <ProductTab
-                id={product.id}
-                image={product.image}
-                productName={product.name}
-                price={product.price}
-                sizes={product.sizes}
-              />
-            </div>
-          ))}
-      </div>
+    <div className="product-grid-container ">
+      {products
+        .filter((x) => filterFunction(x))
+        .map((product) => (
+          <ProductTab
+            id={product.id}
+            image={product.image}
+            productName={product.name}
+            price={product.price}
+            sizes={product.sizes}
+          />
+        ))}
     </div>
   );
 }

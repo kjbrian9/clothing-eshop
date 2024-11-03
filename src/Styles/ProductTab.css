@@ -83,4 +83,13 @@
     font-size: 10px;
     font-weight: 500;
   }
+  .product-sizes-div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .product-tab-price,
+  .product-tab-sizes {
+    font-size: 0.4rem;
+  }
 }

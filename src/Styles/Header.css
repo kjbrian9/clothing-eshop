@@ -104,7 +104,7 @@
   }
   .webpage-title {
     font-size: 15px;
-    font-family: Sonsie One;
+    font-family: "Sonsie One";
     margin: 0px;
   }
 
@@ -130,5 +130,8 @@
   .cart-logo {
     width: 20px;
     height: 20px;
+  }
+  .header-tabs {
+    gap: 15px;
   }
 }
