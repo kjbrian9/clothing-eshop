@@ -73,7 +73,7 @@ function ProductPage({ products }: Props) {
             </div>
           </div>
           <div className="buy-button-div">
-            <div>
+            <div className="product-page-announcement-div">
               {isVisible ? (
                 selectedSize === " " ? (
                   <h1 className="select-size-text">Please select a size</h1>

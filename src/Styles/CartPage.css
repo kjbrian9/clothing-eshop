@@ -13,6 +13,7 @@
   background: transparent;
   font-weight: 700;
   cursor: pointer;
+  color: black !important;
 }
 
 .quantity-border {

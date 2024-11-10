@@ -94,24 +94,25 @@
 .size-button,
 .color-filter-button,
 .material-filter-button,
-.color-filter-button-selected {
+.color-filter-button-selected,
+.material-filter-button-selected {
   border: none;
   background: none;
   font-family: "Roboto";
   font-size: 1rem;
   font-weight: 500;
-  height: 50px;
-  width: 50px;
   cursor: pointer;
   color: black !important;
-}
-.material-filter-button {
-  width: 70px;
 }
 
 .color-filter-button,
 .material-filter-button {
   font-size: 0.8rem;
+}
+
+.size-button {
+  width: 50px;
+  height: 50px;
 }
 
 .size-button:hover {
@@ -120,6 +121,8 @@
   border: solid 3px rgb(30, 29, 29);
   color: white !important;
   border-radius: 40px;
+  width: 50px;
+  height: 50px;
 }
 .color-filter-button:hover {
   opacity: 0.6;
@@ -132,14 +135,16 @@
   border: solid 3px rgb(30, 29, 29);
   color: white;
   border-radius: 40px;
-  height: 50px;
   width: 50px;
+  height: 50px;
+
   cursor: pointer;
   font-family: "Roboto";
   font-size: 1rem;
   font-weight: 500;
 }
-.color-filter-button-selected {
+.color-filter-button-selected,
+.material-filter-button-selected {
   text-decoration: underline;
   font-size: 0.8rem;
 }
@@ -181,16 +186,19 @@
     display: flex;
   }
 
-  .size-button,
   .color-filter-button {
     font-size: 0.7rem;
     height: 40px;
   }
 
-  .size-button {
+  .size-button,
+  .size-button:hover,
+  .size-filter-button-selected {
     height: 40px;
     width: 40px;
+    font-size: 0.7rem;
   }
+
   .price-slider {
     height: 3px;
     width: 100px;
@@ -210,9 +218,12 @@
     border: none;
     padding-right: 0px;
   }
+
+  .material-filter-button {
+    font-size: 0.6rem;
+  }
 }
 @media (max-width: 768px) {
-  .size-button,
   .color-filter-button {
     font-size: 0.5rem;
     height: 40px;
@@ -249,11 +260,21 @@
   }
   .size-button,
   .color-filter-button,
-  .material-filter-button {
+  .material-filter-button,
+  .color-filter-button-selected,
+  .size-filter-button-selected,
+  .material-filter-button-selected {
     font-size: 0.5rem;
     font-weight: 500;
+  }
+  .size-button,
+  .size-button:hover,
+  .size-filter-button-selected {
     height: 30px;
     width: 30px;
+  }
+  .material-filter-button {
+    width: 50px;
   }
   .reset-filters-button,
   .filter-selected-price {
@@ -270,10 +291,10 @@
   .mobile-filter-container {
     gap: 10px;
   }
-  .color-filter-button-selected,
-  .size-filter-button-selected {
-    font-size: 0.5rem;
-    width: 25px;
-    height: 25px;
+  .reset-filters-button-container {
+    width: 100;
+  }
+  .material-filter-container {
+    border-right: 1px rgba(180, 180, 180, 0.551) solid;
   }
 }

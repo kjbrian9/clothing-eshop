@@ -1,7 +1,7 @@
 .product-tab-container {
-  width: 22vw;
-  height: 30vw;
-  max-width: 22vw;
+  justify-self: center;
+  width: 80%;
+  height: 90%;
   border: solid 2px rgba(178, 178, 178, 0.1);
   box-shadow: -1px 0px 6.5px 4px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -13,7 +13,7 @@
 
 .product-tab-image {
   width: 80%;
-  height: 22vw;
+  height: 70%;
   object-fit: cover;
   transition: transform 1s ease-in-out, scale 1s ease-out,
     border-radius 1s ease-in-out;
@@ -71,10 +71,8 @@
   }
 }
 @media (max-width: 768px) {
-  .product-tab-name,
-  .product-tab-price,
-  .product-tab-sizes {
-    font-size: 8px;
+  .product-tab-name {
+    font-size: 0.8rem;
   }
 
   .buy-button {
@@ -90,6 +88,10 @@
   }
   .product-tab-price,
   .product-tab-sizes {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
+  }
+  .product-tab-container {
+    width: 42vw;
+    height: 60vw;
   }
 }

@@ -7,7 +7,6 @@ import PriceSlider from "./PriceSlider";
 import ProductList from "./ProductList";
 import ResetFiltersButton from "./ResetFiltersButton";
 import SizeFilter from "./SizeFilter";
-import MobileFilter from "./MobileFilter";
 import { FilterProps } from "../App";
 import { useFilterContext } from "./FilterContext";
 import MaterialFilter from "./MaterialFilter";
@@ -41,25 +40,18 @@ function JewelleryPage() {
         <div className="jewellery-page-title-container">
           <h1 className="jewellery-page-title">Jewellery</h1>
         </div>
-        {screenWidth >= 769 ? (
-          <div className="filters-container">
-            <MaterialFilter></MaterialFilter>
-            <SizeFilter></SizeFilter>
-            <PriceSlider></PriceSlider>
-            <div className="filter-reset-button">
-              <FilterButton></FilterButton>
-              <ResetFiltersButton></ResetFiltersButton>
-            </div>
+
+        <div className="filters-container">
+          <MaterialFilter></MaterialFilter>
+          <SizeFilter></SizeFilter>
+          <PriceSlider></PriceSlider>
+          <div className="reset-filters-button-container">
+            <FilterButton></FilterButton>
+            <ResetFiltersButton></ResetFiltersButton>
           </div>
-        ) : (
-          <MobileFilter></MobileFilter>
-        )}
-        <div className="product-grid-container">
-          <ProductList
-            productType="Jewellery"
-            products={Products}
-          ></ProductList>
         </div>
+
+        <ProductList productType="Jewellery" products={Products}></ProductList>
       </div>
     </div>
   );

@@ -71,6 +71,20 @@
   color: grey;
   font-size: 18px;
   font-weight: 400;
+  animation: fade-out forwards ease-in-out 2s;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.product-page-announcement-div {
+  height: 50px;
 }
 .product-description-title {
   font-size: 20px;
@@ -148,5 +162,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .added-to-cart-text,
+  .select-size-text {
+    color: grey;
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
+  .product-page-announcement-div {
+    height: 25px;
   }
 }

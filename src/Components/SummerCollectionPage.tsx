@@ -7,12 +7,16 @@ import FilterButton from "./FilterButton";
 import { useFilterContext } from "./FilterContext";
 import PriceSlider from "./PriceSlider";
 import ResetFiltersButton from "./ResetFiltersButton";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { FilterProps } from "../App";
 
 function SummerCollectionPage() {
   const { filters, setFilters } = useFilterContext();
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+
   useEffect(() => {
+    window.addEventListener("resize", resizeHandler);
     let newSizeFilter: FilterProps = {
       colorFilter: "",
       sizeFilter: "",
@@ -22,6 +26,12 @@ function SummerCollectionPage() {
     };
     setFilters(newSizeFilter);
   }, [setFilters]);
+  const resizeHandler = () => {
+    setScreenWidth(window.innerWidth);
+    setScreenHeight(window.innerHeight);
+    console.log("height" + screenHeight);
+    console.log("width" + screenWidth);
+  };
   return (
     <div>
       <div className="summer-collection-page-content">
@@ -47,15 +57,13 @@ function SummerCollectionPage() {
           <ColorFilter></ColorFilter>
           <SizeFilter></SizeFilter>
           <PriceSlider></PriceSlider>
-          <div className="filter-reset-button">
+          <div className="reset-filters-button-container">
             <FilterButton></FilterButton>
             <ResetFiltersButton></ResetFiltersButton>
           </div>
         </div>
 
-        <div className="product-grid-container">
-          <ProductList productType="Men" products={Products}></ProductList>
-        </div>
+        <ProductList productType="Men" products={Products}></ProductList>
       </div>
     </div>
   );

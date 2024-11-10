@@ -11,16 +11,9 @@ function DeleteFromCartButton({ ProductName }: Props) {
       className="remove-from-cart-button"
       onClick={() => {
         let oldCart = [...cart];
-        console.log(oldCart);
         let index;
         index = oldCart.findIndex((e) => e.cartItemName === ProductName);
-        console.log(index);
-
-        if (oldCart[index].cartItemQuantity > 1) {
-          oldCart[index].cartItemQuantity = oldCart[index].cartItemQuantity - 1;
-        } else {
-          oldCart.splice(index, 1);
-        }
+        oldCart.splice(index, 1);
         setCart(oldCart);
       }}
     ></button>

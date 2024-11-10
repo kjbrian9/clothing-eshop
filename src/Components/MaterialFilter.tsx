@@ -33,25 +33,11 @@ function SizeFilter() {
               console.log(e);
             }
           }}
-          className={"material-filter-button"}
-          style={{
-            backgroundColor:
-              selectedMaterial === e && isFilterPressed === true
-                ? "rgb(30, 29, 29)"
-                : "",
-            opacity:
-              selectedMaterial === e && isFilterPressed === true ? "0.8" : "",
-            border:
-              selectedMaterial === e && isFilterPressed === true
-                ? "solid 3px rgb(30, 29, 29)"
-                : "",
-            color:
-              selectedMaterial === e && isFilterPressed === true
-                ? " white"
-                : "",
-            borderRadius:
-              selectedMaterial === e && isFilterPressed === true ? "40px" : "",
-          }}
+          className={
+            selectedMaterial === e && isFilterPressed === true
+              ? "material-filter-button-selected"
+              : "material-filter-button"
+          }
         >
           {e}
         </button>
