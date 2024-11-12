@@ -28,7 +28,7 @@
 .quantity-container {
   width: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
 }
 .cart-title {
   width: 100px;
@@ -294,12 +294,20 @@
   .cart-product-quantity,
   .cart-product-size,
   .cart-product-name {
-    font-size: 12px;
+    font-size: 0.7rem;
     width: auto;
   }
+  .cart-product-size {
+    width: 30px;
+  }
 
+  .cart-product-name {
+    white-space: nowrap;
+    font-size: 0.6rem;
+  }
   .cart-product-row-div {
     height: 100px;
+    width: 100vw;
   }
   .cart-product-name-quantity-size-container {
     display: flex;
@@ -339,5 +347,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
     height: 80px;
+  }
+  .cart-page-content {
+    width: 80%;
   }
 }
