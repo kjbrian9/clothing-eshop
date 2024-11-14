@@ -1,5 +1,5 @@
 .product-tab-container {
-  justify-self: center;
+  justify-self: center !important;
   width: 80%;
   height: 90%;
   border: solid 2px rgba(178, 178, 178, 0.1);
@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px 10px 0px;
+  margin: 0 auto;
 }
 
 .product-tab-image {
