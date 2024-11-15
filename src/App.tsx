@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import HeroPage from "./HeroPage";
 import SummerCollectionFrontPage from "./Components/SummerCollectionFrontPage";
@@ -67,7 +67,7 @@ function App() {
     <>
       <CartContext.Provider value={cartValue}>
         <FilterContext.Provider value={filterValue}>
-          <BrowserRouter>
+          <HashRouter>
             <Header></Header>
             <Routes>
               <Route path="/AboutUs" element={<AboutUsPage />} />
@@ -75,7 +75,7 @@ function App() {
                 path="/product/:id"
                 element={<ProductPage products={Products} />}
               />
-              <Route path="/clothing-eshop" element={<HeroPage />}></Route>
+              <Route path="/" element={<HeroPage />}></Route>
               <Route
                 path="/SummerCollectionFrontPage"
                 element={<SummerCollectionFrontPage />}
@@ -89,11 +89,11 @@ function App() {
               <Route path="/ContactPage" element={<ContactPage />}></Route>
               <Route path="/CartPage" element={<CartPage />}></Route>
               <Route
-                path="/clothing-eshop/JewelleryPage"
+                path="/JewelleryPage"
                 element={<JewelleryPage></JewelleryPage>}
               ></Route>
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
         </FilterContext.Provider>
       </CartContext.Provider>
     </>
