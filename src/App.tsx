@@ -7,7 +7,6 @@ import WomenPage from "./Components/WomenPage";
 import UserPage from "./Components/UserPage";
 import ContactPage from "./Components/ContactPage";
 import Header from "./Components/Header";
-
 import ProductPage from "./Components/ProductPage";
 import { Products } from "./Products";
 import CartPage from "./Components/CartPage";
@@ -90,7 +89,7 @@ function App() {
               <Route path="/ContactPage" element={<ContactPage />}></Route>
               <Route path="/CartPage" element={<CartPage />}></Route>
               <Route
-                path="/JewelleryPage"
+                path="/clothing-eshop/JewelleryPage"
                 element={<JewelleryPage></JewelleryPage>}
               ></Route>
             </Routes>
