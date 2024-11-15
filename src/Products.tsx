@@ -256,7 +256,7 @@ const Products = [
   },
   {
     id: 24,
-    name: "Silver Verj jewellery winter set",
+    name: "Silver jewellery winter set",
     image: "images/jewellery-picture4.webp",
     price: "150",
     description:
