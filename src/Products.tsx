@@ -257,7 +257,7 @@ const Products = [
   {
     id: 24,
     name: "Silver Verj jewellery winter set",
-    image: "Images/jewellery-picture4.webp",
+    image: "images/jewellery-picture4.webp",
     price: "150",
     description:
       "A luxurious silver jewelry set, perfect for the colder months. This set adds elegance and warmth to your winter wardrobe.",
