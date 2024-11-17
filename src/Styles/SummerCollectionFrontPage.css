@@ -178,4 +178,7 @@
   .summer-collection-bg-image-container {
     margin-bottom: 50px;
   }
+  .product-grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
 }

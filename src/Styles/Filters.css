@@ -236,11 +236,7 @@
     margin: 0px;
     height: auto;
   }
-  .size-filter-container,
-  .color-filter-container,
-  .material-filter-container {
-    padding-right: 0px;
-  }
+
   .price-slider {
     height: 2px;
     width: 100px;
@@ -258,7 +254,6 @@
   }
 
   .color-filter-container {
-    border-right: 1px grey solid;
     padding-right: 10px;
   }
   .size-button,
