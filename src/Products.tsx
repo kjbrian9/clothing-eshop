@@ -91,13 +91,13 @@ const Products = [
   {
     id: 9,
     name: "Denim jacket",
-    image: "/images/productTabImage9.webp",
+    image: "/images/productTabImage9.jpeg",
     price: "150",
     description:
       "A classic blue denim jacket designed for a comfortable fit. It’s the perfect piece to layer for a timeless, rugged look.",
     type: "Men",
     sizes: ["XS", "S", "M"],
-    color: "Blue",
+    color: "White",
   },
   {
     id: 10,
