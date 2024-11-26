@@ -151,6 +151,7 @@
   position: relative;
   margin: 0px;
   height: 400px;
+  width: 550px;
   text-shadow: rgb(0, 0, 0) 1px 0 5px;
 }
 
@@ -373,6 +374,7 @@
     font-size: 20px;
     position: relative;
     height: 250px;
+    width: 100%;
   }
 
   .company-description-text-container-three,
