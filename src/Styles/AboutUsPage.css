@@ -150,14 +150,15 @@
   font-size: 35px;
   position: relative;
   margin: 0px;
-  height: 400px;
+  height: 360px;
   width: 550px;
   text-shadow: rgb(0, 0, 0) 1px 0 5px;
+  line-height: 1.1;
 }
 
 .company-description-text-container-three {
   width: 550px;
-  height: 400px;
+  height: 360px;
   position: relative;
   align-self: center;
   margin-left: 100px;
